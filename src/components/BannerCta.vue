@@ -100,12 +100,14 @@
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					cursor: pointer;
 				}
 
 				.cta-secondary {
 					background-color: $darkblue-color;
 					color: white;
 					border: unset;
+					cursor: pointer;
 				}
 			}
 		}

@@ -75,7 +75,7 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 
 		h2 {
 			color: $darkblue-color;
-			font-size: 20px;
+			font-size: 26px;
 			line-height: 32px;
 		}
 	}
@@ -89,6 +89,7 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 		justify-content: center;
 
 		.pet-card {
+            cursor: pointer;
 			display: flex;
 			flex-direction: column;
 			margin: 10px;
@@ -145,8 +146,8 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 				.gift-info {
                     display: flex;
                     align-items: center;
-                    gap: 30px;
 					background-color: $primary-color;
+                    gap: 5px;
 					color: $darkblue-color;
 					font-size: 16px;
 					padding: 10px 20px;
@@ -155,17 +156,7 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
                     
                     p {
                         position: relative;
-                        
-                        &:nth-child(1)::before {
-                            content: "";
-                            position: absolute;
-                            top: 35%;
-                            left: 175%;
-                            width: 4px;
-                            height: 4px;
-                            border-radius: 4px;
-                            background-color: $darkblue-color;
-                        }
+                        font-size: 12px;
                     }
 				}
 			}
@@ -177,11 +168,13 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 		margin: 0 10px;
 		padding: 10px 0;
 		border-radius: 18px;
+        cursor: pointer;
 
 		.arrow {
 			font-family: monospace;
 			line-height: 10px;
 			font-weight: 800;
+            margin-left: 10px;
 		}
 	}
 
@@ -218,6 +211,7 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 
 						p {
 							position: relative;
+                            font-size: 16px;
 
 							&:nth-child(1)::before {
 								content: "";
@@ -231,6 +225,24 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 							}
 						}
 					}
+                    .gift-info {
+                        gap: 30px;
+
+                        p {
+                            position: relative;
+                            
+                            &:nth-child(1)::before {
+                                content: "";
+                                position: absolute;
+                                top: 35%;
+                                left: 175%;
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 4px;
+                                background-color: $darkblue-color;
+                            }
+                        }
+                    }
 				}
 			}
 		}
