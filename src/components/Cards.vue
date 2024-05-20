@@ -26,6 +26,14 @@
 						</p>
 					</div>
 					<p class="pet-price">{{ pet.price }}</p>
+					<p class="gift-info" v-if="pet.gift">
+                        <p>
+							<img src="../assets/icons/gift.png" alt="gift" loading="lazy" class="gift-icon" />
+						</p>
+						<p>
+							Free <span>{{ pet.gift }}</span>
+						</p>
+                    </p>
 				</div>
 			</div>
 		</div>
@@ -132,6 +140,33 @@ const { qoute, heading, pets } = defineProps(["qoute", "heading", "pets"]);
 					font-weight: 700;
 					line-height: 24px;
 					margin-bottom: 10px;
+				}
+
+				.gift-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+					background-color: $primary-color;
+					color: $darkblue-color;
+					font-size: 16px;
+					padding: 10px 20px;
+					border-radius: 8px;
+					font-weight: 600;
+                    
+                    p {
+                        position: relative;
+                        
+                        &:nth-child(1)::before {
+                            content: "";
+                            position: absolute;
+                            top: 35%;
+                            left: 175%;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 4px;
+                            background-color: $darkblue-color;
+                        }
+                    }
 				}
 			}
 		}

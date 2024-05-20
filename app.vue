@@ -1,9 +1,10 @@
 <template>
-	<header>test</header>
+	<!-- <header>not complete</header> -->
 	<main>
 		<HeroBanner />
 		<Cards :pets="pets" :heading="headingDog" :qoute="qouteDog" />
 		<BannerCta />
+		<Cards :pets="petsGift" :heading="headingGift" :qoute="qouteGift" />
 	</main>
 </template>
 
@@ -15,6 +16,9 @@ import BannerCta from "./src/components/BannerCta.vue";
 
 const headingDog = "Take A Look At Some Of Our Pets";
 const qouteDog = "Whats new?";
+
+const headingGift = "Our Products";
+const qouteGift = "Hard to choose right products for your pets?";
 
 const pets = [
 	{
@@ -88,6 +92,89 @@ const pets = [
 		age: "3",
 		price: "5.700.000 VND",
 		imageUrl: "/dog.webp",
+	},
+];
+
+const petsGift = [
+	{
+		id: 1,
+		name: "Pomeranian",
+		breed: "Pomeranian",
+		gender: "Male",
+		age: "3",
+		price: "6.200.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 2,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 3,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 4,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 5,
+		name: "Pomeranian",
+		breed: "Pomeranian",
+		gender: "Male",
+		age: "3",
+		price: "6.200.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 6,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 7,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
+	},
+	{
+		id: 8,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+		gift: "Dog Food",
 	},
 ];
 </script>
