@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'SVN-Gilroy Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('SVN-Gilroy Light'), url("./src/assets/font/svn-gilroy/Gilroy_Light.woff") format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SVN-Gilroy Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('SVN-Gilroy Bold'), url("./src/assets/font/svn-gilroy/Gilroy_Bold.woff") format('woff');
+    }
+
+* {    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SVN-Gilroy Light', sans-serif;
+}
+

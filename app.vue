@@ -1,10 +1,10 @@
 <template>
-	<div>
+	<div class="">
 		<HeroBanner />
 	</div>
 </template>
 
 <script setup>
-import HeroBanner from "./src/components/HeroBanner.vue";
-import "./src/assets/css/global.sass";
+import HeroBanner from "@/components/HeroBanner.vue";
+import "@/assets/css/global.scss";
 </script>

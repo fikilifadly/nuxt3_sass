@@ -1,0 +1,44 @@
+$primary-color: #fceed5;
+$secondary-color: rgba(247, 219, 167, 1);
+$black-color: #00171F;
+$darkblue-color: rgba(0, 52, 89, 1);
+$bg-hero: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+
+
+@mixin main-font {
+	font-size: 40px;
+	color: $darkblue-color;
+	font-weight: 800;
+    line-height: 60px;
+	@media screen and (min-width: 768px) {
+        font-size: 60px;
+        line-height: 68px;
+	}
+}
+
+@mixin secondary-font {
+	font-size: 22px;
+	color: $darkblue-color;
+	font-weight: 600;
+    line-height: 38px;
+	@media screen and (min-width: 768px) {
+        font-size: 46px;
+        line-height: 60px;
+	}
+}
+
+@mixin paragraph-font {
+    font-size: 12px;
+    color: $black-color;
+    font-weight: 400;
+    line-height: 18px;
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@mixin wh-full {
+    width: 100%;
+    height: 100%;
+}
