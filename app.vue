@@ -1,10 +1,93 @@
 <template>
-	<div class="">
+	<header>test</header>
+	<main>
 		<HeroBanner />
-	</div>
+		<Cards :pets="pets" :heading="headingDog" :qoute="qouteDog" />
+		<BannerCta />
+	</main>
 </template>
 
 <script setup>
 import HeroBanner from "@/components/HeroBanner.vue";
 import "@/assets/css/global.scss";
+import Cards from "./src/components/Cards.vue";
+import BannerCta from "./src/components/BannerCta.vue";
+
+const headingDog = "Take A Look At Some Of Our Pets";
+const qouteDog = "Whats new?";
+
+const pets = [
+	{
+		id: 1,
+		name: "Pomeranian",
+		breed: "Pomeranian",
+		gender: "Male",
+		age: "3",
+		price: "6.200.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 2,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 3,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 4,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 5,
+		name: "Pomeranian",
+		breed: "Pomeranian",
+		gender: "Male",
+		age: "3",
+		price: "6.200.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 6,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 7,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+	{
+		id: 8,
+		name: "Poodle Tiny",
+		breed: "Poodle Tiny",
+		gender: "Male",
+		age: "3",
+		price: "5.700.000 VND",
+		imageUrl: "/dog.webp",
+	},
+];
 </script>
